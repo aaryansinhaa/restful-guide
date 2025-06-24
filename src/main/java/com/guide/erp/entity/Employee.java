@@ -1,6 +1,6 @@
 package com.guide.erp.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -42,7 +42,7 @@ public class Employee {
     @Column(name = "emp_department", nullable = false)
     private String empDepartment;
     @Column(name = "emp_hire_date", nullable = false)
-    private Date empHireDate;
+    private LocalDate empHireDate;
     @ManyToOne
     @JoinColumn(name = "emp_manager")
     private Employee manager;
